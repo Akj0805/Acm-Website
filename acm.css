@@ -220,7 +220,7 @@ video {
     width: 100%;
     height: 100%;
     border: 0;
-    border-radius: 2    0px;
+    border-radius: 20px;
     -webkit-border-radius: 20px;
 }
 
@@ -265,6 +265,13 @@ video {
     left: 0;
     height: 100%;
     width: 100%;
+}
+.shade{
+    position: absolute;
+    top: 178.8%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 70.3vh;
 }
 .latest-pic{
     width: 100%;
@@ -355,17 +362,24 @@ video {
     text-align: center;
     color: #7DB0DE;
 }
-.content p{
-    margin-top: 20px;
-    margin-left: 20px;
-    /* align-items: center; */
-}
 #sihheading{
-    margin-left: 20px;
+    margin-left: -13px;
 }
 .sih{
     height: 219px;
+    margin-left: -14px;
 }
+
+/* Faculty  */
+
+.faculty-heading{
+    color: white;
+    margin-left: 710px;
+    padding-bottom: 15px;
+}
+
+
+
   /* carousel */
 .pre-btn,.nxt-btn{
     position: absolute;
@@ -489,7 +503,6 @@ video {
 footer{
     margin-top: 60px;
     height: 200px;
-    box-shadow: 0 -5px 6px rgba(0,0,0,0.5);
 }
 .social-icons h2{
     color:#7DB0DE;
@@ -535,4 +548,80 @@ footer{
     top: 438%;
     left: 41.7%;
     color: white;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1290px) {
+
+    /* Nav-bar */
+
+
+    .acm-logo{
+        height: 70px;
+        margin-left: 5rem;
+    }
+    .nav-links{
+        padding: 27px;
+    }
+    .merch-container{
+        margin-left: 4rem;
+    }
+    
+    /* About section  */
+
+    .div-round {
+        overflow: hidden;
+        position: relative;
+        top: -40%;
+        left: -1%;
+        z-index: 10;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        display: grid;
+    
+    }
+
+    .about-p{
+        grid-column: 1;
+        padding-left: 10px;  
+        padding-top: 20px ;
+    }
+    .about h1{
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #7DB0DE;
+    }
+    .about h2{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .about h3{
+        font-weight: 500;
+        font-size:  1.4rem;
+        color: #7DB0DE;
+    }
+
+    /* Events Oraganized */
+    .events-p{
+        left: 3%;
+    }    
+    .events-container .box{
+        width: calc(100%/4 - 80px);
+        margin-left: 130px;
+    }
+    .events-container{
+        width: 1400px;
+    }
+
+    /* footer */
+
+    .logo-desc{
+        left: 41%;
+    }    
+
+
+    @media screen and (max-width:1220px) {
+        
+    }
 }
